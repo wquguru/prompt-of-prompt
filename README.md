@@ -6,13 +6,13 @@
 
 ## 它能做什么
 - 从“元提示词”生成你的专属模板（含 `{{变量位}}`）。
-- 提供现成模板与示例结果，帮助不懂技术也能对齐交付标准。
+- 提供示例模板与示例结果，帮助不懂技术也能对齐交付标准。
 
 ## 我该用哪个文件
-- [PROMPT_OF_PROMPT.md](PROMPT_OF_PROMPT.md)：元提示词（拿它去问模型，生成你的模板）。
-- [templates/WEBSITE_DOC_ANALYSIS.md](templates/WEBSITE_DOC_ANALYSIS.md)：网站文档分析模板。
-- [templates/advanced/QUANT_TRADING_SIMONS_TEMPLATE.md](templates/advanced/QUANT_TRADING_SIMONS_TEMPLATE.md)（可选）：量化项目技术文档模板（西蒙斯理念内嵌版）。
-- [samples/WEBSITE_DOC_ANALYSIS_SAMPLE.md](samples/WEBSITE_DOC_ANALYSIS_SAMPLE.md)：示例结果（用于对齐标准）。
+- [PROMPT_OF_PROMPT.md](PROMPT_OF_PROMPT.md)：**核心工具**（元提示词，用它生成你的专属模板）。
+- [templates/WEBSITE_DOC_ANALYSIS.md](templates/WEBSITE_DOC_ANALYSIS.md)：**示例模板**（用元提示词生成的网站分析模板例子）。
+- [templates/advanced/QUANT_TRADING_SIMONS_TEMPLATE.md](templates/advanced/QUANT_TRADING_SIMONS_TEMPLATE.md)：**示例模板**（量化项目技术文档模板例子）。
+- [samples/WEBSITE_DOC_ANALYSIS_SAMPLE.md](samples/WEBSITE_DOC_ANALYSIS_SAMPLE.md)：**示例结果**（用示例模板产出的结果，用于对齐标准）。
 
 ## 3 步上手
 1) 打开你常用的 AI（Claude / OpenAI 等）。
@@ -20,7 +20,7 @@
 ```
 请阅读仓库中的 PROMPT_OF_PROMPT.md。我的场景是「{{你的场景}}」。请基于它生成一个可复用的提示词模板（Markdown），变量位用 {{var}} 标注。
 ```
-3) 把生成的模板应用到目标；若是网站分析，也可直接用 [templates/WEBSITE_DOC_ANALYSIS.md](templates/WEBSITE_DOC_ANALYSIS.md)；最后对照 [samples/WEBSITE_DOC_ANALYSIS_SAMPLE.md](samples/WEBSITE_DOC_ANALYSIS_SAMPLE.md) 自检，补齐缺项再交付。
+3) 把生成的模板应用到目标；若是网站分析场景，可参考 [templates/WEBSITE_DOC_ANALYSIS.md](templates/WEBSITE_DOC_ANALYSIS.md) 进行调优；最后对照 [samples/WEBSITE_DOC_ANALYSIS_SAMPLE.md](samples/WEBSITE_DOC_ANALYSIS_SAMPLE.md) 自检，补齐缺项再交付。
 
 ## 对齐要点（最小集）
 - 结构完整：执行摘要/架构/组件/数据流/建议/风险/清单。
